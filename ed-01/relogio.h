@@ -4,7 +4,7 @@
 class relogio {
   public:
   
-  relogio(int hora, int minuto);
+  relogio(unsigned int hora, unsigned int minuto);
   void imprime();
   relogio();
   ~relogio();
