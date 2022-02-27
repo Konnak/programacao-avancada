@@ -31,7 +31,7 @@ int main()
 {
     relogio r1(20,30);
     relogio r2(10,20);
-    relogio r3(-10,60);
+    relogio r3(05,50);
     
     r1.imprime();
     r2.imprime();
