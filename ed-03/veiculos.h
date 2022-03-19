@@ -1,31 +1,44 @@
 #pragma once
 
-class Carro {
+
+Class Veiculo {
 public:
-Carro();
 
 void setCodigo(int codigo) { _codigo = codigo; }
 void setPlaca(int placa) { _placa = placa; }
 void setCor(int cor) { _cor = cor; }
-void setCombustivel (TipoCombustivel combustivel) { _combustivel = combustivel; }
 void setValor (float valor) { _valor = valor; }
+
 int getCodigo() const { return _codigo; }
 std::string getPlaca() const { return _placa; }
 std::string getCor() const { return _cor; }
-TipoCombustivel getCombustivel();
-int getQuilometragem();
-float getValor();
+float getValor const () { return _valor; }
+
 void imprime();
-void incrementaQuilometragem();
+
 void aluga();
 void devolve();
-
 private:
+
 int _codigo;
 std::string _placa;
 std::string _cor;
-TipoCombustivel _combustivel;
-int _quilometragem;
 int _valor;
 bool _disponivel;
+
 }
+
+class Carro {
+public:
+Carro();
+
+void setCombustivel (TipoCombustivel combustivel) { _combustivel = combustivel; }
+TipoCombustivel getCombustivel();
+int getQuilometragem();
+void incrementaQuilometragem();
+
+private:
+
+TipoCombustivel _combustivel;
+int _quilometragem;
+};
